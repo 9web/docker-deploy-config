@@ -1,0 +1,18 @@
+account:
+  id: f4X45PdJssQgPNXod5wMNjhAaxqMUSC4XY2j6xPCckT6
+  pub-key: f4X45PdJssQgPNXod5wMNjhAaxqMUSC4XY2j6xPCckT6
+  sec-key: FzkXdMzf7ZN6tCT3mkXaB4jtKk23w28roCAMphYarf3L
+consensus:
+  witness-list:
+  - f4X45PdJssQgPNXod5wMNjhAaxqMUSC4XY2j6xPCckT6
+  - gvCQNmkuA6AwdddRMSUg6jr8W7swKWAnhEY3cAthj9bX
+  - 2538yUDuKTLaXqCTFS1tfVmMEL4dVnzLDWChoMdoxgCa4
+net:
+  log-path: iostlog
+  node-table-path: netpath
+  node-id:
+  listen-addr: 127.0.0.1
+  target: base
+  port: 30302
+vm:
+  max-block-gas:

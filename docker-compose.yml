@@ -1,0 +1,16 @@
+version: '3'
+services:
+  iserver:
+    # build: .
+    image: registry.rednode.cn:5000/iserver
+    links:
+    - redis:redis
+    ports:
+    - "30302:30302"
+    - "30303:30303"
+    volumes:
+    - .iserver.yml:/root/.iserver.yml
+  redis:
+    image: redis
+    # volumes:
+    # - /Users/Pana/Projects/go/src/github.com/iost-official/iostAutoPlay/redis_data/:/data/
