@@ -9,7 +9,7 @@ services:
     - "30302:30302"
     - "30303:30303"
     volumes:
-    - .iserver.yml:/root/.iserver.yml
+    - iserver.yml:/root/.iserver.yml
   redis:
     image: redis
     # volumes:

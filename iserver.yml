@@ -16,3 +16,8 @@ net:
   port: 30302
 vm:
   max-block-gas:
+ldb:
+  path: 
+redis:
+  addr: redis
+  port: 6379
