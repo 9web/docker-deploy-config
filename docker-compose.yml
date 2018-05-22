@@ -2,8 +2,8 @@ version: '3'
 services:
   iserver:
     # build: .
-    #image: registry.rednode.cn:5000/iserver:1.0.0
-    image: iserver:t1
+    image: registry.rednode.cn:5000/iserver:1.0.1
+    # image: iserver:t1
     links:
     - redis:redis
     ports:
