@@ -1,3 +1,4 @@
+# host mode
 version: '3'
 services:
   iserver:
