@@ -2,19 +2,18 @@ version: '3'
 services:
   iserver:
     # build: .
-    #image: registry.rednode.cn:5000/iserver:1.0.0
-    image: iserver:t1
-    links:
-    - redis:redis
-    #network_mode: host
-    ports:
-    - "30302:30302"
-    - "30303:30303"
+    image: registry.rednode.cn:5000/iserver:1.0.0
+    #links:
+    #- redis:redis
+    network_mode: host
+    #ports:
+    #- "30302:30302"
+    #- "30303:30303"
     volumes:
     - ./iserver-sample/iserver2.yml:/root/.iserver.yml
   redis:
     image: redis
-    #ports:
-    #- "6379:6379"
+    ports:
+    - "6379:6379"
     # volumes:
     # - /Users/Pana/Projects/go/src/github.com/iost-official/iostAutoPlay/redis_data/:/data/
